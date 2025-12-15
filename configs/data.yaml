@@ -1,0 +1,31 @@
+# --- CONFIG DATASET FD002 (COMPLEX) ---
+raw_data_path: "data/raw/train_FD002.txt"  # Pastikan file ini ada di folder data/raw
+output_dir: "data/processed"
+model_dir: "models"
+
+# Dataset FD002 memiliki 260 mesin.
+# Kita pakai 200 untuk Training, 60 sisanya (Unit 201-260) untuk Streaming Demo.
+test_split_engine_id: 200 
+
+rul_threshold: 30
+
+# Fitur yang dipilih
+# PENTING: Kita masukkan op_setting agar model tahu konteks operasi (Ngebut vs Pelan)
+selected_features:
+  - "op_setting_1"
+  - "op_setting_2"
+  - "op_setting_3"
+  - "sensor_2"
+  - "sensor_3"
+  - "sensor_4"
+  - "sensor_7"
+  - "sensor_8"
+  - "sensor_9"
+  - "sensor_11"
+  - "sensor_12"
+  - "sensor_13"
+  - "sensor_14"
+  - "sensor_15"
+  - "sensor_17"
+  - "sensor_20"
+  - "sensor_21"

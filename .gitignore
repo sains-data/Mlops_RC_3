@@ -1,0 +1,37 @@
+# --- Python System Files (Sampah) ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Environment & Config ---
+.env
+.venv
+env/
+venv/
+.vscode/
+.idea/
+
+# --- Database Lokal (Jangan di-upload) ---
+*.db
+*.sqlite3
+inference_logs.db
+
+# --- MLflow Logs (SANGAT PENTING DI-IGNORE) ---
+# Folder ini isinya ribuan file kecil hasil eksperimen.
+# Kalau tidak di-ignore, proses push/pull akan sangat lambat.
+mlruns/
+.trash/
+
+# --- Dataset (Opsional) ---
+# Biasanya data mentah tidak di-upload ke Git jika ukurannya besar (>100MB).
+# Tapi untuk dataset NASA ini (masih kecil), boleh di-uncomment jika mau di-upload.
+data/raw/train_D001.txt
+data/raw/train_D003.txt
+data/raw/train_D004.txt
+# data/processed/
+
+# --- Models (Opsional) ---
+# Di MLOps sungguhan, model tidak disimpan di Git (tapi di S3/DVC).
+# TAPI untuk demo tugas kuliah, sebaiknya model TETAP DI-UPLOAD 
+# supaya dosen/juri bisa langsung run tanpa training ulang.
+# models/*.pkl
