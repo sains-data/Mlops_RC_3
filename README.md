@@ -31,32 +31,29 @@ Karakteristik dataset:
 
 ## 🧠 Alur Sistem (Workflow)
 1. **Data Ingestion**  
-   Dataset sensor dimuat dari sumber Kaggle dan disiapkan sebagai data utama.
+   Dataset sensor dibaca dan diproses untuk menghasilkan label kerusakan mesin.
 
-2. **Preprocessing Data**  
-   Pembersihan data, pemilihan fitur, dan persiapan data untuk proses training.
+2. **Exploratory Data Analysis (EDA)**  
+   Analisis pola degradasi sensor, korelasi fitur, dan distribusi label untuk memahami karakteristik data.
 
-3. **Train-Test Split**  
-   Dataset dibagi menjadi:
-   - 80% data training
-   - 20% data testing
+3. **Preprocessing Data**  
+   Pemilihan fitur dan normalisasi data agar siap digunakan oleh model.
 
-4. **Model Training**  
-   Model machine learning dilatih untuk memprediksi:
-   - Cycle terjadinya kerusakan mesin
-   - Probabilitas atau persentase risiko kerusakan
+4. **Model Training & Evaluation**  
+   Model machine learning dilatih dan dievaluasi menggunakan data training dan testing (80:20).
 
-5. **Model Evaluation**  
-   Model dievaluasi menggunakan data testing untuk mengukur performa.
+5. **Experiment Tracking (MLflow)**  
+   Seluruh eksperimen dicatat untuk membandingkan performa model dan memilih model terbaik.
 
-6. **Experiment Tracking (MLflow)**  
-   Setiap eksperimen training dicatat menggunakan MLflow, meliputi:
-   - Parameter model
-   - Metric evaluasi
-   - Artifact model
+6. **Deployment (Streamlit)**  
+   Model terbaik dideploy ke aplikasi web untuk melakukan prediksi dan simulasi data sensor secara interaktif.
 
-7. **Deployment (Streamlit)**  
-   Model terbaik dideploy ke aplikasi web berbasis Streamlit untuk melakukan prediksi secara interaktif.
+## 🌐 Fitur Aplikasi Web
+- Simulasi data sensor mesin secara real-time
+- Prediksi status mesin (NORMAL / CRITICAL)
+- Estimasi risiko kerusakan dalam bentuk probabilitas
+- Visualisasi telemetry sensor (tekanan, temperatur, dan RPM)
+- Riwayat hasil prediksi selama simulasi berjalan
 
 ## 🛠️ Tools & Teknologi
 - **Python**  
@@ -87,8 +84,8 @@ Karakteristik dataset:
   - Persentase probabilitas kerusakan
 - Tampilan hasil prediksi secara real-time melalui website.
 
-## 📊 Experiment Tracking dengan MLflow
-MLflow digunakan untuk mencatat seluruh proses training model, membandingkan performa antar eksperimen, serta menyimpan model terbaik yang digunakan pada tahap deployment. Dengan MLflow, seluruh eksperimen dapat direproduksi dan dianalisis kembali.
+## 📊 Experiment Tracking
+MLflow digunakan untuk mencatat parameter, metrik evaluasi, serta artifact model sehingga proses training dapat direproduksi dan dibandingkan dengan mudah.
 
 ## 📌 Catatan Pengembangan
 - Mekanisme penambahan dataset baru dan retraining otomatis belum diterapkan
