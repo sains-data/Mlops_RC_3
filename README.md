@@ -9,7 +9,7 @@
 ![Deployment](https://img.shields.io/badge/Deployment-Streamlit-purple)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
-# 🚀 MLOps Machine Failure Prediction System
+# 🚀 MLOps Engine Telemetry System
 
 ## 📌 Deskripsi Proyek
 Proyek ini merupakan implementasi **Machine Learning Operations (MLOps)** untuk membangun sistem prediksi kerusakan mesin berbasis data sensor. Sistem ini dirancang untuk memprediksi **kapan mesin akan mengalami kegagalan (failure cycle)** serta **persentase probabilitas kerusakan**, kemudian menampilkannya melalui sebuah website interaktif.
