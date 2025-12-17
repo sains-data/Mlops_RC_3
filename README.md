@@ -57,6 +57,28 @@ Karakteristik dataset:
 6. **Deployment (Streamlit)**  
    Model terbaik dideploy ke aplikasi web untuk melakukan prediksi dan simulasi data sensor secara interaktif.
 
+## 📊 Exploratory Data Analysis Results
+EDA menunjukkan adanya pola degradasi mesin yang jelas sebelum memasuki kondisi CRITICAL. Beberapa hasil utama yang diperoleh:
+
+- Pola penurunan dan peningkatan nilai sensor tertentu seiring bertambahnya cycle
+- Hubungan signifikan antara beberapa sensor dengan Remaining Useful Life (RUL)
+- Distribusi label tidak seimbang, dengan kondisi NORMAL lebih dominan dibandingkan CRITICAL
+
+## 🖼️ Visualization Evidence
+
+### Sensor Degradation Pattern
+![Sensor Degradation](reports/figures/eda_behavior_sensor_11.png)
+
+### Correlation Heatmap
+![Correlation Heatmap](reports/figures/eda_correlation_heatmap.png)
+
+### Label Distribution
+![Label Distribution](reports/figures/eda_label_dist.png)
+
+## Model Training & Evaluation
+
+## 
+
 ## 🌐 Fitur Aplikasi Web
 - Simulasi data sensor mesin secara real-time
 - Prediksi status mesin (NORMAL / CRITICAL)
