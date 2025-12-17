@@ -184,7 +184,7 @@ mlflow ui
 streamlit run app.py
 ```
 
-![ML Canvas](https://raw.githubusercontent.com/sains-data/Mlops_RC_3/main/reports/figures/ML%20Canvas_Kel%203.png)
+![ML Canvas](https://github.com/sains-data/Mlops_RC_3/blob/main/ML%20Canvas_Kel%203.png)
 
 
 ## 📌 Catatan Pengembangan
