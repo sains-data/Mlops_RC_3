@@ -87,6 +87,42 @@ Karakteristik dataset:
 ## 📊 Experiment Tracking
 MLflow digunakan untuk mencatat parameter, metrik evaluasi, serta artifact model sehingga proses training dapat direproduksi dan dibandingkan dengan mudah.
 
+## ▶️ How to Run the Project
+### 1. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Data Ingestion
+```bash
+python src/data_ingest.py
+```
+
+### 3. Exploratory Data Analysis
+```bash
+python src/eda.py
+```
+
+### 4. Data Preprocessing
+```bash
+python src/preprocessing.py
+```
+
+### 5. Model Training & Tuning
+```bash
+python src/train.py
+```
+
+### 6. Run MLflow UI
+```bash
+mlflow ui
+```
+
+### 7. Run Inference Application
+```bash
+streamlit run app.py
+```
+
 ## 📌 Catatan Pengembangan
 - Mekanisme penambahan dataset baru dan retraining otomatis belum diterapkan
 - Pipeline dirancang agar dapat dikembangkan menjadi **continuous training** pada tahap selanjutnya
