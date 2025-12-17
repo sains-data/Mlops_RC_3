@@ -82,10 +82,10 @@ Heatmap ini menampilkan hubungan antar sensor dan Remaining Useful Life (RUL), d
 Distribusi label memperlihatkan ketidakseimbangan kelas antara kondisi NORMAL dan CRITICAL, yang menjadi dasar pemilihan metrik evaluasi seperti F1-score.
 
 ## 💠 Model & Hyperparameter Configuration
-### Model
+### Model Training
 Model yang digunakan dalam project ini adalah **Random Forest Classifier**, yang dipilih karena kemampuannya menangani data tabular dengan hubungan non-linear serta ketahanannya terhadap noise pada data sensor. Random Forest bekerja dengan membangun banyak decision tree dan menggabungkan hasil prediksinya untuk menghasilkan keputusan yang lebih stabil dan akurat.
 
-### Hyperparameter Tuning
+### Hyperparameter Tuning (Model Tuning)
 Optimasi hyperparameter dilakukan menggunakan **Optuna** untuk mendapatkan konfigurasi Random Forest terbaik. Hyperparameter yang dioptimasi meliputi:
 - `n_estimators` – jumlah *decision tree* dalam ensemble
 - `max_depth` – kedalaman maksimum pohon
@@ -94,7 +94,19 @@ Optimasi hyperparameter dilakukan menggunakan **Optuna** untuk mendapatkan konfi
 - `max_features` – jumlah fitur yang dipertimbangkan pada setiap split
 Konfigurasi terbaik dipilih berdasarkan performa pada data validasi dan disimpan sebagai model final `best_model.pkl` untuk tahap inference.
 
-## 
+## 🧩 Model Evaluation
+valuasi model dilakukan menggunakan metrik:
+- Accuracy
+- Recall
+- F1-score
+
+F1-score digunakan sebagai metrik utama karena distribusi label tidak seimbang dan kesalahan prediksi pada kondisi CRITICAL memiliki risiko tinggi.
+
+## 🧪 Model Testing
+```bash
+tests/test_app.py
+```
+Testing dilakukan untuk memastikan pipeline dan konfigurasi berjalan dengan baik. Basic testing disediakan pada folder `tests/` dan dapat dijalankan menggunakan pytest.
 
 ## 🌐 Fitur Aplikasi Web
 - Simulasi data sensor mesin secara real-time
