@@ -39,7 +39,7 @@ Karakteristik dataset:
 > ⚠️ Pada tahap ini, sistem masih menggunakan **dataset awal** dan belum menerapkan mekanisme penambahan dataset baru maupun retraining incremental.
 
 ## 🧠 Alur Sistem (Workflow)
-![Pipeline](Predictive Maintenance MLOps Pipeline.png)
+![Pipeline](Predictive-Maintenance-MLOps-Pipeline.png)
 
 1. **Data Ingestion**  
    Dataset sensor dibaca dan diproses untuk menghasilkan label kerusakan mesin.
