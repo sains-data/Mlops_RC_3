@@ -183,8 +183,6 @@ mlflow ui
 streamlit run app.py
 ```
 
-![Deskripsi Gambar](images/ML Canvas_Kel 3.png)
-
 ## 📌 Catatan Pengembangan
 - Mekanisme penambahan dataset baru dan retraining otomatis belum diterapkan
 - Pipeline dirancang agar dapat dikembangkan menjadi **continuous training** pada tahap selanjutnya
