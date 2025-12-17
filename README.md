@@ -71,7 +71,7 @@ EDA menunjukkan adanya pola degradasi mesin yang jelas sebelum memasuki kondisi 
 ### Sensor Degradation Pattern
 ![Sensor Degradation](reports/figures/eda_behavior_sensor_11.png)
 ![Sensor Degradation](reports/figures/eda_behavior_sensor_12.png)
-Berdasarkan hasil eksplorasi data, sensor 11 dan sensor 12 memperlihatkan tren degradasi yang paling stabil dan memiliki keterkaitan yang jelas dengan kondisi kesehatan mesin, sehingga dipilih sebagai representasi visual dalam analisis degradasi.
+Berdasarkan hasil eksplorasi data, sensor 11 dan sensor 12 memperlihatkan tren degradasi yang paling stabil dan memiliki keterkaitan yang jelas dengan kondisi kesehatan mesin, sehingga dipilih sebagai representasi visual dalam analisis degradasi. Engine 1 (Pressure), Engine 2 (Temp), dan Engine 3 (Speed).
 
 ### Correlation Heatmap
 ![Correlation Heatmap](reports/figures/eda_correlation_heatmap.png)
