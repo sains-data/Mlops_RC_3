@@ -1,5 +1,14 @@
 # Mlops_RC_3
 
+![Platform](https://img.shields.io/badge/Platform-GitHub-blue)
+![Language](https://img.shields.io/badge/Language-Python-yellow)
+![Domain](https://img.shields.io/badge/Domain-Predictive%20Maintenance-orange)
+![Model](https://img.shields.io/badge/Model-Random%20Forest-green)
+![Method](https://img.shields.io/badge/Method-MLOps%20Pipeline-red)
+![Tracking](https://img.shields.io/badge/Tracking-MLflow-lightgrey)
+![Deployment](https://img.shields.io/badge/Deployment-Streamlit-purple)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+
 # 🚀 MLOps Machine Failure Prediction System
 
 ## 📌 Deskripsi Proyek
