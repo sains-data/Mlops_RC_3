@@ -79,7 +79,18 @@ Heatmap ini menampilkan hubungan antar sensor dan Remaining Useful Life (RUL), d
 ![Label Distribution](reports/figures/eda_label_dist.png)
 Distribusi label memperlihatkan ketidakseimbangan kelas antara kondisi NORMAL dan CRITICAL, yang menjadi dasar pemilihan metrik evaluasi seperti F1-score.
 
-## Model Training & Evaluation
+## Model & Hyperparameter Configuration
+### Model
+Model yang digunakan dalam project ini adalah **Random Forest Classifier**, yang dipilih karena kemampuannya menangani data tabular dengan hubungan non-linear serta ketahanannya terhadap noise pada data sensor. Random Forest bekerja dengan membangun banyak decision tree dan menggabungkan hasil prediksinya untuk menghasilkan keputusan yang lebih stabil dan akurat.
+
+### Hyperparameter Tuning
+Optimasi hyperparameter dilakukan menggunakan **Optuna** untuk mendapatkan konfigurasi Random Forest terbaik. Hyperparameter yang dioptimasi meliputi:
+- `n_estimators` – jumlah decision tree dalam ensemble
+- `max_depth` – kedalaman maksimum pohon
+- `min_samples_split` – jumlah minimum sampel untuk melakukan split
+- `min_samples_leaf` – jumlah minimum sampel pada node daun
+- `max_features` – jumlah fitur yang dipertimbangkan pada setiap split
+Konfigurasi terbaik dipilih berdasarkan performa pada data validasi dan disimpan sebagai model final `best_model.pkl` untuk tahap inference.
 
 ## 
 
