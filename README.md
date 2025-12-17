@@ -9,6 +9,7 @@
 ![Deployment](https://img.shields.io/badge/Deployment-Streamlit-purple)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
+
 # 🚀 MLOps Engine Telemetry System
 
 ## 📌 Deskripsi Proyek
@@ -182,6 +183,9 @@ mlflow ui
 ```bash
 streamlit run app.py
 ```
+
+![ML Canvas](https://raw.githubusercontent.com/sains-data/Mlops_RC_3/main/reports/figures/ML%20Canvas_Kel%203.png)
+
 
 ## 📌 Catatan Pengembangan
 - Mekanisme penambahan dataset baru dan retraining otomatis belum diterapkan
