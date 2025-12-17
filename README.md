@@ -195,7 +195,7 @@ streamlit run app.py
 - Akmal Faiz Abdillah (122450114)
 - Elok Fiola (122450051)
 - Rut Junita Sari Siburian (122450103)
-- Syalaisha Andina Putriansyah (122450111)
+- Syalaisha Andini Putriansyah (122450111)
 
 ## 📄 Lisensi
 Proyek ini dibuat untuk keperluan akademik dan pembelajaran.
