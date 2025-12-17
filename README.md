@@ -93,7 +93,7 @@ MLflow digunakan untuk mencatat parameter, metrik evaluasi, serta artifact model
 
 ## 👥 Tim
 - Akmal Faiz Abdillah (122450114)
-- Elok Fiola (1224500
+- Elok Fiola (122450051)
 - Rut Junita Sari Siburian (122450103)
 - Syalaisha Andina Putriansyah (122450111)
 
