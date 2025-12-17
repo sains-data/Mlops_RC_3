@@ -12,7 +12,7 @@
 
 # 🚀 MLOps Engine Telemetry System
 
-![ML Canvas](https://github.com/sains-data/Mlops_RC_3/blob/main/ML%20Canvas_Kel%203.png)
+![ML Canvas](https://github.com/sains-data/Mlops_RC_3/blob/main/ML%20Canvas_Kel%203(1).png)
 
 ## 📌 Deskripsi Proyek
 Proyek ini merupakan implementasi **Machine Learning Operations (MLOps)** untuk membangun sistem prediksi kerusakan mesin berbasis data sensor. Sistem ini dirancang untuk memprediksi **kapan mesin akan mengalami kegagalan (failure cycle)** serta **persentase probabilitas kerusakan**, kemudian menampilkannya melalui sebuah website interaktif.
